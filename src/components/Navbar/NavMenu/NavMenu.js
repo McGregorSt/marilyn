@@ -1,13 +1,13 @@
 import React from 'react'
  
 import NavLogo from './NavLogo/NavLogo'
-import MenuItem from './MenuItem/MenuItem'
+import classes from './NavMenu.css'
+import Menu from './Menu/Menu'
 
 const NavMenu = () => {
-  <div>
+  return <div className={classes.NavMenu}>
     <NavLogo />
-    <MenuItem />
-    <MenuItem />
+    <Menu />
   </div>
 }
  

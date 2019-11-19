@@ -1,7 +1,9 @@
 import React from 'react'
  
+import classes from './NavLogo.css'
+
 const NavLogo = () => {
-  <div>
+  return <div className={classes.NavLogo}>
     NavLogo
   </div>
 }

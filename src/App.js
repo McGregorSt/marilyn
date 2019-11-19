@@ -1,12 +1,14 @@
 import React from 'react';
 
 import classes from './App.css'
+import Navbar from './components/Navbar/Navbar';
 
 
 function App() {
   return (
     <div className={classes.App}>
-      App
+      <Navbar />
+      Main
     </div>
   );
 }

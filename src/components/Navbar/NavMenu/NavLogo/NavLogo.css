@@ -1,0 +1,11 @@
+.NavLogo {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  border-radius: 150px;
+  position: relative;
+  left: -125px;
+  top: -155px;
+  border: 10px solid rgba(0, 0, 0, 0.121);
+  background-color: cadetblue;
+}

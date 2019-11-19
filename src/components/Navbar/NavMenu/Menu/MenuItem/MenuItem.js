@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
+
+import classes from './MenuItem.css'
  
 class MenuItem extends Component {
   render() {
    return (
-    <div>
+    <div className={classes.MenuItem}>
       MenuItem
     </div>
   )}
