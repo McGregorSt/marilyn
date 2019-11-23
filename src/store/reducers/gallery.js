@@ -1,20 +1,23 @@
 import * as actionTypes from '../actions/actionTypes'
-import updateObject from '../utility'
+import {updateObject} from '../utility'
 
 const initialState = {
-  pictures: [],
+  photos: [],
   loading: false,
-  error: true,
+  error: false,
 }
 
+console.log('here', initialState.photos)
+// const fetchPictures
+
 const picturesReducer = (state = initialState, action) => {
-  switch (actionTypes) {
+  switch (action.type) {
     case actionTypes.FETCH_PICTURES_START:
       return updateObject(state, { loading: true })
     case actionTypes.FETCH_PICTURES_SUCCESS:
       return updateObject(state, {
         loading: false,
-        pictures: action.pictures,
+        photos: action.photos,
       })
     case actionTypes.FETCH_PICTURES_FAIL:
       return updateObject(state, { error: true })
@@ -22,3 +25,5 @@ const picturesReducer = (state = initialState, action) => {
       return state
   }
 }
+
+export default picturesReducer
