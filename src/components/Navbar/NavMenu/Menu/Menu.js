@@ -5,8 +5,8 @@ import MenuItem from './MenuItem/MenuItem'
 
 const Menu = () => {
   return <div className={classes.Menu}>
-    <MenuItem />
-    <MenuItem />
+    <MenuItem to='/article' value='article' />
+    <MenuItem to='/gallery' value='gallery' />
   </div>
 }
  

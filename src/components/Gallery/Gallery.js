@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import { NavLink } from 'react-router-dom'
 
 import * as actions from '../../store/actions/gallery'
 import GalleryItem from './GalleryItem/GalleryItem'
@@ -8,18 +9,20 @@ class Gallery extends Component {
 
   componentDidMount() {
     this.props.onFetchPictures()
-    console.log('there', this.props.photos)
   }
 
   render () {
     let gallery = this.props.photos.map(photo => (
-        <GalleryItem src={photo} alt='alt' clicked='bar' />
+      <div key={photo.id}>
+        <NavLink to={photo.url} target='_blank' >
+          <GalleryItem src={photo.url} alt={photo.title} />
+        </NavLink>
+      </div>
     ))
 
     return (
       <div>
         {gallery}
-        G
       </div>
     )
   }

@@ -7,9 +7,6 @@ const initialState = {
   error: false,
 }
 
-console.log('here', initialState.photos)
-// const fetchPictures
-
 const picturesReducer = (state = initialState, action) => {
   switch (action.type) {
     case actionTypes.FETCH_PICTURES_START:

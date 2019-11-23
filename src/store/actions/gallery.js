@@ -29,18 +29,20 @@ const mariUrl =
         dispatch(fetchPicturesStart())
         let photos = []
         await fetch(mariUrl)
-        .then(resp => resp.json())
-        // .then(data => console.log(data.photos.photo.slice(0, 9)))
-        .then(data => photos = data.photos.photo.slice(0, 9))
+          .then(resp => resp.json())
+          .then(data => photos = data.photos.photo.slice(0, 9))
         console.log('here', photos)
-        // console.log()
         let photosUrl = []
         photos.map(photo => {
-          let farmUrl = `https://farm${photo.farm}.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}_b.jpg`
-          photosUrl.push(farmUrl)
+          let farmUrl = `https://farm${photo.farm}.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}_m.jpg`
+          photosUrl.push({
+            url: farmUrl,
+            id: photo.id,
+            title: photo.title
+          })
           return photosUrl
         })
-        console.log('photosUrl', photosUrl)
+        console.log(photosUrl)
         dispatch(fetchPicturesSuccess(photosUrl))
       } catch (err) {
           return dispatch(fetchPicturesFail(err))

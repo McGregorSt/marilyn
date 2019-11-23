@@ -1,14 +1,15 @@
-import React, { Component } from 'react'
+import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 import classes from './MenuItem.css'
  
-class MenuItem extends Component {
-  render() {
+const MenuItem = ({ to, value }) => {
    return (
     <div className={classes.MenuItem}>
-      MenuItem
+      <NavLink to={ to } value={ value }>
+        {value}
+      </NavLink>
     </div>
   )}
-}
  
 export default MenuItem
