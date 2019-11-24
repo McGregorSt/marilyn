@@ -1,11 +1,18 @@
 .NavLogo {
-  width: 300px;
-  height: 300px;
+  width: 160px;
+  height: 160px;
   border: 1px solid black;
-  border-radius: 150px;
+  border-radius: 110px;
   position: relative;
-  left: -125px;
-  top: -155px;
-  border: 10px solid rgba(0, 0, 0, 0.121);
-  background-color: cadetblue;
+  left: -160px;
+  top: -95px;
+  border: 10px solid rgba(231, 231, 231, 0.8);
+  background-image: url('../../../../assets/logo4.jfif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 113%;
+  background-position-x: -10px;
+  background-position-y: -10px; 
+  overflow-y: auto;
+  /* background-color: cadetblue; */
 }

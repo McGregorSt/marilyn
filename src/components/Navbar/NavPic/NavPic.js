@@ -4,9 +4,7 @@ import classes from './NavPic.css'
 
 class NavPic extends Component {
   render() {
-    return <div className={classes.NavPic}>
-      NavPic
-    </div>
+    return <div className={classes.NavPic}></div>
   }
 }
 

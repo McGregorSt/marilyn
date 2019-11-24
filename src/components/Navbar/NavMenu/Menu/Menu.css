@@ -1,9 +1,8 @@
 .Menu {
-  width: 15%;
-  border: 1px solid #000;
+  width: 17%;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 0 35px;
-
+  padding: 0 15px 0 0;
 }
+

@@ -4,24 +4,25 @@ import { NavLink } from 'react-router-dom'
 
 import * as actions from '../../store/actions/gallery'
 import GalleryItem from './GalleryItem/GalleryItem'
- 
+import classes from './Gallery.css'
+
 class Gallery extends Component {
 
   componentDidMount() {
-    this.props.onFetchPictures()
+    this.props.onFetchPictures('m')
   }
 
   render () {
     let gallery = this.props.photos.map(photo => (
       <div key={photo.id}>
-        <NavLink to={photo.url} target='_blank' >
+        <NavLink to={photo.url.replace('_m.jpg', '_b.jpg')} target='_blank' >
           <GalleryItem src={photo.url} alt={photo.title} />
         </NavLink>
       </div>
     ))
 
     return (
-      <div>
+      <div className={classes.Gallery}>
         {gallery}
       </div>
     )
@@ -38,7 +39,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    onFetchPictures: () => dispatch(actions.fetchPictures())
+    onFetchPictures: (size) => dispatch(actions.fetchPictures(size))
   }
 }
 

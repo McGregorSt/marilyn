@@ -23,7 +23,7 @@ export const fetchPicturesFail = error => {
 const mariUrl =
   'https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=9798037bfcb726dc341c0a6c6660e3a6&tags=marilyn+monroe&min_upload_date=2019-10-22&max_upload_date=2019-11-22&sort=date-posted-desc&format=json&nojsoncallback=1'
   
-  export const fetchPictures = () => {
+  export const fetchPictures = (size) => {
     return async dispatch => {
       try {
         dispatch(fetchPicturesStart())
@@ -34,13 +34,13 @@ const mariUrl =
         console.log('here', photos)
         let photosUrl = []
         photos.map(photo => {
-          let farmUrl = `https://farm${photo.farm}.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}_m.jpg`
+          let farmUrl = `https://farm${photo.farm}.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}_${size}.jpg`
           photosUrl.push({
             url: farmUrl,
             id: photo.id,
             title: photo.title
           })
-          return photosUrl
+          return console.log(photosUrl)
         })
         console.log(photosUrl)
         dispatch(fetchPicturesSuccess(photosUrl))

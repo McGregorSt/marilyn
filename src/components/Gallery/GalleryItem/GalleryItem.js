@@ -1,8 +1,10 @@
 import React from 'react'
- 
+
+import classes from './GalleryItem.css'
+
 const GalleryItem = ({ src, alt, clicked }) => {
   return (
-    <div >
+    <div className={classes.GalleryItem}>
       <img src={src} alt={alt} onClick={clicked}/>
     </div>
   )
