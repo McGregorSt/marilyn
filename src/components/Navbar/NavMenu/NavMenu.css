@@ -1,8 +1,13 @@
 .NavMenu {
-  /* width: 100%; */
-  height: 70px;
+  height: 90px;
   display: flex;
   justify-content: space-between;
   padding: 0 0 0 200px;
   background: rgba(88, 199, 162, 0.829);
+}
+@media (max-width: 600px) {
+  .NavMenu {
+    justify-content: space-around;
+    padding: 0 0 0 160px;
+  }
 }

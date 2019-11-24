@@ -1,3 +1,9 @@
 .GalleryItem {
   padding: 30px;
 }
+
+@media (max-width: 1100px) {
+  .GalleryItem {
+    padding: 10px;
+  }
+}

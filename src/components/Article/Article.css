@@ -34,3 +34,40 @@
   padding: 20px 35px 30px 10px;
   font-size: 18px;
 }
+
+@media (max-width: 1100px) {
+  .quote {
+    width: 90%;
+  }
+  .quote__text {
+    padding: 0 85px 0 20px;
+  }
+}
+@media (max-width: 800px) {
+  .Article {
+    padding: 10px 10px;
+  }
+  .quote__text {
+    padding: 0 40px 0 20px;
+  }
+  .pipe {
+    height: 85px;
+    width: 15px;
+  }
+}
+@media (max-width: 600px) {
+  .article__main, .footer, .quote {
+    font-size: 16px;
+    padding: 20px 0 0 0;
+  }
+  .pipe {
+    height: 95px;
+    width: 10px;
+  }
+}
+@media (max-width: 450px) {
+  .pipe {
+    height: 105px;
+    width: 10px;
+  }
+}
