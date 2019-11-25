@@ -8,7 +8,7 @@ const MenuItem = ({ to, value, icon }) => {
    return (
       <div className={classes.MenuItem} >
         <NavLink to={ to } exact activeClassName={classes.active}>
-          <div className={classes.g}>
+          <div className={classes.MenuItemBorder}>
             <FontAwesomeIcon icon={icon} className={value} />
           </div>
         </NavLink>

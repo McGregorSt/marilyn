@@ -5,9 +5,15 @@
   padding: 0 0 0 200px;
   background: rgba(88, 199, 162, 0.829);
 }
-@media (max-width: 600px) {
+@media (max-width: 530px) {
   .NavMenu {
-    justify-content: space-around;
-    padding: 0 0 0 160px;
+    height: 60px;
+    padding: 0 0 0 170px;
+  }
+}
+@media (max-width: 370px) {
+  .NavMenu {
+    justify-content: center;
+    padding: 0;
   }
 }

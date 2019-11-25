@@ -4,5 +4,3 @@ export const updateObject = (prevObject, updatedObject) => {
     ...updatedObject
   }
 }
-
-// export default updateObject

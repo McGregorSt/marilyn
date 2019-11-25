@@ -5,7 +5,7 @@
   border-radius: 110px;
   position: relative;
   left: -160px;
-  top: -95px;
+  top: -75px;
   border: 10px solid rgba(231, 231, 231, 0.8);
   background-image: url('../../../../assets/logo4.jfif');
   background-size: cover;
@@ -17,17 +17,23 @@
   /* background-color: cadetblue; */
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   .NavLogo {
     max-height: 160px;
   }
-}
+} */
 @media (max-width: 530px) {
   .NavLogo {
     height: 100px;
     width: 100px;
     left: -160px;
-    top: -30px;
+    top: -50px;
     border-radius: 100px;
+    background-size: 120%;
+  }
+}
+@media (max-width: 370px) {
+  .NavLogo {
+    display: none;
   }
 }

@@ -1,16 +1,15 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 import NavPic from './NavPic/NavPic'
 import NavMenu from './NavMenu/NavMenu'
- 
-class Navbar extends Component {
-  render() {
+
+const Navbar = () => {
    return (
     <div>
       <NavPic />
       <NavMenu />
     </div>
-  )}
+  )
 }
- 
+
 export default Navbar

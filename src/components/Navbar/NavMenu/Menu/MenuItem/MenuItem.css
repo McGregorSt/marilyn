@@ -2,7 +2,7 @@
   font-size: 24px;
   display: flex;
 }
-.active > .g {
+.active > .MenuItemBorder {
   width: 40px;
   height: 40px;
   border: 1px solid white;
@@ -17,7 +17,7 @@ svg {
   .MenuItem {
     font-size: 32px;
   }
-  .active > .g {
+  .active > .MenuItemBorder {
     width: 60px;
     height: 60px;
     padding: 10px 5px 0 5px;
@@ -25,15 +25,31 @@ svg {
   }
 }
 @media (max-width: 800px) {
-  .active > .g {
+  .MenuItem {
+    padding: 0 40px 0 0 ;
+  }
+  .active > .MenuItemBorder {
     width: 60px;
     height: 60px;
-    border: 1px solid white;
     border-radius: 50px;
   }
 }
-@media (max-width: 420px) {
-  .active > .g {
-    padding: 20px 10px 0 10px;
+@media (max-width: 530px) {
+  .MenuItem {
+    font-size: 24px;
+  }
+  .active > .MenuItemBorder {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    padding: 10px;
   }
 }
+
+/* @media (max-width: 370px) {
+  .MenuItem {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+} */

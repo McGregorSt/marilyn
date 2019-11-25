@@ -7,30 +7,23 @@ import GalleryItem from './GalleryItem/GalleryItem'
 import classes from './Gallery.css'
 
 class Gallery extends Component {
-
   componentDidMount() {
     this.props.onFetchPictures('m')
   }
 
-  render () {
+  render() {
     let gallery = this.props.photos.map(photo => (
       <div key={photo.id}>
-        <NavLink to={photo.url.replace('_m.jpg', '_b.jpg')} target='_blank' >
+        <NavLink to={photo.url.replace('_m.jpg', '_b.jpg')} target="_blank">
           <GalleryItem src={photo.url} alt={photo.title} />
         </NavLink>
       </div>
     ))
 
-    return (
-      <div className={classes.Gallery}>
-        {gallery}
-      </div>
-    )
+    return <div className={classes.Gallery}>{gallery}</div>
   }
-
-  
 }
- 
+
 const mapStateToProps = state => {
   return {
     photos: state.photos,
@@ -39,7 +32,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    onFetchPictures: (size) => dispatch(actions.fetchPictures(size))
+    onFetchPictures: size => dispatch(actions.fetchPictures(size)),
   }
 }
 

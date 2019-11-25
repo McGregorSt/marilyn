@@ -12,8 +12,20 @@
     padding: 0 40px 0 0;
   }
 }
-@media (max-width: 800px) {
+/* @media (max-width: 800px) {
   .Menu > * {
     padding: 0 40px 0 0 ;
+  }
+} */
+
+@media (max-width: 530px) {
+  .Menu {
+    width: 10%;
+  }
+}
+@media (max-width: 370px) {
+  .Menu {
+    display: flex;
+    justify-content: space-between;
   }
 }
