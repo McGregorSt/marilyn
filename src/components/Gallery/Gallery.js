@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { NavLink } from 'react-router-dom'
+// import { NavLink } from 'react-router-dom'
 
 import * as actions from '../../store/actions/index'
 import GalleryItem from './GalleryItem/GalleryItem'
@@ -17,9 +17,9 @@ class Gallery extends Component {
     if (!this.props.loading) {
       gallery = this.props.photos.map(photo => (
         <div key={photo.id}>
-          <NavLink to={photo.url.replace('_m.jpg', '_b.jpg')} target="_blank">
+          <a href={photo.url.replace('_m.jpg', '_b.jpg')} target="_blank" rel="noopener noreferrer">
             <GalleryItem src={photo.url} alt={photo.title} />
-          </NavLink>
+          </a>
         </div>
       ))
     }
