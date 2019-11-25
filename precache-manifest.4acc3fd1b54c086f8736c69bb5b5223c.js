@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "10ba3599cc670239ecba2787644562d7",
+    "revision": "b481ba1ae7c9b1e298b51c780fa29e32",
     "url": "/marilyn/index.html"
   },
   {
-    "revision": "81289ff6cbaea9cd8743",
+    "revision": "236c9ad3d895d7316dc5",
     "url": "/marilyn/static/css/main.4c75c90d.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/marilyn/static/js/2.f41275c0.chunk.js"
   },
   {
-    "revision": "81289ff6cbaea9cd8743",
-    "url": "/marilyn/static/js/main.219201c1.chunk.js"
+    "revision": "236c9ad3d895d7316dc5",
+    "url": "/marilyn/static/js/main.99e4dc34.chunk.js"
   },
   {
     "revision": "54f4c85b10b8cebba660",
