@@ -13,15 +13,8 @@
   background-size: 113%;
   background-position-x: -10px;
   background-position-y: -10px; 
-  /* overflow-y: auto; */
-  /* background-color: cadetblue; */
 }
 
-/* @media (max-width: 600px) {
-  .NavLogo {
-    max-height: 160px;
-  }
-} */
 @media (max-width: 530px) {
   .NavLogo {
     height: 100px;

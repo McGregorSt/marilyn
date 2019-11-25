@@ -12,12 +12,6 @@
     padding: 0 40px 0 0;
   }
 }
-/* @media (max-width: 800px) {
-  .Menu > * {
-    padding: 0 40px 0 0 ;
-  }
-} */
-
 @media (max-width: 530px) {
   .Menu {
     width: 10%;

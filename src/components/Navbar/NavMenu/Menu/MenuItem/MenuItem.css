@@ -45,11 +45,3 @@ svg {
     padding: 10px;
   }
 }
-
-/* @media (max-width: 370px) {
-  .MenuItem {
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-  }
-} */
