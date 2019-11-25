@@ -1,3 +1,1 @@
-export {
-  fetchPictures
-} from './index.js'
+export { fetchPictures } from './gallery'

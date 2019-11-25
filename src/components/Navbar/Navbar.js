@@ -4,7 +4,7 @@ import NavPic from './NavPic/NavPic'
 import NavMenu from './NavMenu/NavMenu'
 
 const Navbar = () => {
-   return (
+  return (
     <div>
       <NavPic />
       <NavMenu />
