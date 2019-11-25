@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/marilyn/static/css/main.4c75c90d.chunk.css",
-    "main.js": "/marilyn/static/js/main.17b50615.chunk.js",
-    "main.js.map": "/marilyn/static/js/main.17b50615.chunk.js.map",
+    "main.js": "/marilyn/static/js/main.219201c1.chunk.js",
+    "main.js.map": "/marilyn/static/js/main.219201c1.chunk.js.map",
     "runtime-main.js": "/marilyn/static/js/runtime-main.16b87c98.js",
     "runtime-main.js.map": "/marilyn/static/js/runtime-main.16b87c98.js.map",
-    "static/js/2.fb5aa1aa.chunk.js": "/marilyn/static/js/2.fb5aa1aa.chunk.js",
-    "static/js/2.fb5aa1aa.chunk.js.map": "/marilyn/static/js/2.fb5aa1aa.chunk.js.map",
+    "static/js/2.f41275c0.chunk.js": "/marilyn/static/js/2.f41275c0.chunk.js",
+    "static/js/2.f41275c0.chunk.js.map": "/marilyn/static/js/2.f41275c0.chunk.js.map",
     "index.html": "/marilyn/index.html",
-    "precache-manifest.f9cb1055dc236875b9c0a4ab2c77b1a4.js": "/marilyn/precache-manifest.f9cb1055dc236875b9c0a4ab2c77b1a4.js",
+    "precache-manifest.771398e1bd396cfe45a2dbec0b62e324.js": "/marilyn/precache-manifest.771398e1bd396cfe45a2dbec0b62e324.js",
     "service-worker.js": "/marilyn/service-worker.js",
     "static/css/main.4c75c90d.chunk.css.map": "/marilyn/static/css/main.4c75c90d.chunk.css.map",
     "static/media/NavLogo.css": "/marilyn/static/media/logo4.ca1dcdf1.jfif",
@@ -16,8 +16,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.16b87c98.js",
-    "static/js/2.fb5aa1aa.chunk.js",
+    "static/js/2.f41275c0.chunk.js",
     "static/css/main.4c75c90d.chunk.css",
-    "static/js/main.17b50615.chunk.js"
+    "static/js/main.219201c1.chunk.js"
   ]
 }
