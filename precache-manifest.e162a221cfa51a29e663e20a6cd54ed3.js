@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b481ba1ae7c9b1e298b51c780fa29e32",
+    "revision": "c94543f5a890442ac6e0e61e3bbccd06",
     "url": "/marilyn/index.html"
   },
   {
-    "revision": "236c9ad3d895d7316dc5",
-    "url": "/marilyn/static/css/main.4c75c90d.chunk.css"
+    "revision": "526af1fd7c81a34ce699",
+    "url": "/marilyn/static/css/main.e10fa8e8.chunk.css"
   },
   {
-    "revision": "b85b96cd72181679dfef",
-    "url": "/marilyn/static/js/2.f41275c0.chunk.js"
+    "revision": "4c68c02a2f206fc377cb",
+    "url": "/marilyn/static/js/2.d6706722.chunk.js"
   },
   {
-    "revision": "236c9ad3d895d7316dc5",
-    "url": "/marilyn/static/js/main.99e4dc34.chunk.js"
+    "revision": "526af1fd7c81a34ce699",
+    "url": "/marilyn/static/js/main.3873c15e.chunk.js"
   },
   {
     "revision": "54f4c85b10b8cebba660",
