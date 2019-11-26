@@ -16,7 +16,7 @@ class Gallery extends Component {
     let gallery = <Spinner />
     if (!this.props.loading) {
       gallery = this.props.photos.map(photo => (
-        <div key={photo.id}>
+        <div key={photo.id} className={classes.Photo}>
           <a href={photo.url.replace('_m.jpg', '_b.jpg')} target="_blank" rel="noopener noreferrer">
             <GalleryItem src={photo.url} alt={photo.title} />
           </a>

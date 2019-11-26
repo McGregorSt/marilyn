@@ -5,9 +5,22 @@
   align-items: center;
   padding: 50px 30px;
 }
+.Photo {
+  width: 30%;
+}
 
 @media (max-width: 1100px) {
   .Gallery {
     padding: 20px 10px;
+  }
+}
+@media (max-width: 800px) {
+  .Photo {
+    width: 50%;
+  }
+}
+@media (max-width: 530px) {
+  .Photo {
+    width: 100%;
   }
 }

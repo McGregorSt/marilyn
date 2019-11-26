@@ -18,8 +18,9 @@ export const fetchPicturesFail = error => {
   }
 }
 
-const mariUrl =
-  'https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=9798037bfcb726dc341c0a6c6660e3a6&tags=marilyn+monroe&min_upload_date=2019-10-22&max_upload_date=2019-11-22&sort=date-posted-desc&format=json&nojsoncallback=1'
+const date = new Date()
+const dateFrom = `${date.toISOString().slice(0, 10)}`
+const mariUrl = `https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=9798037bfcb726dc341c0a6c6660e3a6&tags=marilyn+monroe&max_upload_date=${dateFrom}&sort=date-posted-desc&format=json&nojsoncallback=1`
 
 export const fetchPictures = size => {
   return async dispatch => {
